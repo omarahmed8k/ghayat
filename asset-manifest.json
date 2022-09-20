@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ghayat/static/css/main.9fe6822a.css",
+    "main.js": "/ghayat/static/js/main.e0497dac.js",
+    "static/media/Changa-Medium.ttf": "/ghayat/static/media/Changa-Medium.92506167a425f3921e0d.ttf",
+    "static/media/Changa-Regular.ttf": "/ghayat/static/media/Changa-Regular.c0b82ba1b785a74616c3.ttf",
+    "static/media/Changa-Bold.ttf": "/ghayat/static/media/Changa-Bold.ed3a2134eec530a884de.ttf",
+    "index.html": "/ghayat/index.html",
+    "main.9fe6822a.css.map": "/ghayat/static/css/main.9fe6822a.css.map",
+    "main.e0497dac.js.map": "/ghayat/static/js/main.e0497dac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9fe6822a.css",
+    "static/js/main.e0497dac.js"
+  ]
+}
