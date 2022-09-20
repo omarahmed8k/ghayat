@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ghayat/static/css/main.9fe6822a.css",
-    "main.js": "/ghayat/static/js/main.ed992d59.js",
-    "static/media/Changa-Medium.ttf": "/ghayat/static/media/Changa-Medium.92506167a425f3921e0d.ttf",
-    "static/media/Changa-Regular.ttf": "/ghayat/static/media/Changa-Regular.c0b82ba1b785a74616c3.ttf",
-    "static/media/Changa-Bold.ttf": "/ghayat/static/media/Changa-Bold.ed3a2134eec530a884de.ttf",
-    "index.html": "/ghayat/index.html",
-    "main.9fe6822a.css.map": "/ghayat/static/css/main.9fe6822a.css.map",
-    "main.ed992d59.js.map": "/ghayat/static/js/main.ed992d59.js.map"
+    "main.css": "/ghayat.github.io/static/css/main.8e970e2f.css",
+    "main.js": "/ghayat.github.io/static/js/main.ed992d59.js",
+    "static/media/Changa-Medium.ttf": "/ghayat.github.io/static/media/Changa-Medium.92506167a425f3921e0d.ttf",
+    "static/media/Changa-Regular.ttf": "/ghayat.github.io/static/media/Changa-Regular.c0b82ba1b785a74616c3.ttf",
+    "static/media/Changa-Bold.ttf": "/ghayat.github.io/static/media/Changa-Bold.ed3a2134eec530a884de.ttf",
+    "index.html": "/ghayat.github.io/index.html",
+    "main.8e970e2f.css.map": "/ghayat.github.io/static/css/main.8e970e2f.css.map",
+    "main.ed992d59.js.map": "/ghayat.github.io/static/js/main.ed992d59.js.map"
   },
   "entrypoints": [
-    "static/css/main.9fe6822a.css",
+    "static/css/main.8e970e2f.css",
     "static/js/main.ed992d59.js"
   ]
 }
