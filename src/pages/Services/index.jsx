@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import About from "../../components/About";
+import Services from "../../components/Services";
 
-export default function About() {
+export default function Services() {
   return (
-    <div className="about-page">
+    <div className="services-page">
       <Header />
-      <About />
+      <Services mode="light" />
       <Footer />
     </div>
   );

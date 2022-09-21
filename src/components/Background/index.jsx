@@ -1,6 +1,6 @@
 import "./style.css";
 
-export default function Footer() {
+export default function Background() {
   return (
     <div>
       <p>Footer</p>
