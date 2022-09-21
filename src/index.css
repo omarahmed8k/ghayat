@@ -87,6 +87,14 @@ a {
   text-decoration: none !important;
 }
 
+input,
+textarea,
+select {
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+
 /* Scroll Bar */
 ::-webkit-scrollbar {
   width: 8px;
