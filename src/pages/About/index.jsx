@@ -1,13 +1,15 @@
 import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import About from "../../components/About";
+import AboutComp from "../../components/About";
+import BackgroundComp from "../../components/Background";
 
 export default function About() {
   return (
     <div className="about-page">
       <Header />
-      <About />
+      <BackgroundComp />
+      <AboutComp />
       <Footer />
     </div>
   );

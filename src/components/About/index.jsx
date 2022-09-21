@@ -3,7 +3,7 @@ import "./style.css";
 export default function About() {
   return (
     <div>
-      <p>Footer</p>
+      <p>About</p>
     </div>
   );
 }

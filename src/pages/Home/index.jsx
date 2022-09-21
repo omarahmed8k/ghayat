@@ -1,17 +1,19 @@
 import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import Services from "../../components/Services";
-import About from "../../components/About";
-import Contact from "../../components/Contact";
+import ServicesComp from "../../components/Services";
+import AboutComp from "../../components/About";
+import ContactComp from "../../components/Contact";
+import BackgroundComp from "../../components/Background";
 
 export default function Home() {
   return (
     <div className="home-page">
       <Header />
-      <About />
-      <Services mode="dark" />
-      <Contact />
+      <BackgroundComp />
+      <AboutComp />
+      <ServicesComp mode="dark" />
+      <ContactComp />
       <Footer />
     </div>
   );

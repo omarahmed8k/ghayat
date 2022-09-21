@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import About from "./pages/About";
 import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -10,6 +12,12 @@ function App() {
       </Route>
       <Route exact path="/about">
         <About />
+      </Route>
+      <Route exact path="/services">
+        <Services />
+      </Route>
+      <Route exact path="/contact">
+        <Contact />
       </Route>
     </Router>
   );
