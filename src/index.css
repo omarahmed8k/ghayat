@@ -104,6 +104,10 @@ a {
   background: var(--main-color);
 }
 
+::placeholder {
+  color: #eeeeee;
+}
+
 .page {
   padding-top: 90px;
 }

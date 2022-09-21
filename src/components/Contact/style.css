@@ -1,0 +1,152 @@
+.contact {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+.contact::after {
+  content: "";
+  background: url(../../assets/images/logo-transparent-large.svg) no-repeat
+    center;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.contact .contact-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  height: 100%;
+  width: 100%;
+}
+
+.contact .contact-flex .contact-content {
+  width: 100%;
+}
+
+.contact .contact-flex .contact-list {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.contact .contact-flex .contact-list .list-item {
+  width: 50%;
+}
+
+.contact .contact-flex .contact-list .list-item form {
+  width: 100%;
+  background-color: #fff;
+  padding: 45px 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact .contact-flex .contact-list .list-item form .form-group {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.contact .contact-flex .contact-list .list-item form .form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--main-color);
+  font-family: var(--font-bold);
+}
+
+.contact .contact-flex .contact-list .list-item form .form-group input,
+.contact .contact-flex .contact-list .list-item form .form-group textarea {
+  width: 100%;
+  height: 45px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  outline: none;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.contact .contact-flex .contact-list .list-item form .form-group textarea {
+  padding: 5px 10px;
+  height: 100px;
+  border-radius: 25px;
+  resize: none;
+}
+
+.contact .contact-flex .contact-list .list-item form .form-group button {
+  font-family: var(--font-bold);
+  font-size: 18px;
+  width: 100%;
+  height: 50px;
+}
+
+.contact .contact-flex .contact-list .list-item iframe {
+  width: 100%;
+  height: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  border: 0;
+}
+
+.contact .contact-flex .contact-list .contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.contact .contact-flex .contact-list .contact-info .info-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.contact .contact-flex .contact-list .contact-info .info-item svg {
+  width: 20px;
+  height: 20px;
+}
+.contact .contact-flex .contact-list .contact-info .info-item p {
+  width: calc(100% - 40px);
+  font-size: 16px;
+  text-align: justify;
+  color: var(--main-color);
+}
+
+@media (max-width: 992px) {
+  .contact .contact-flex .contact-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .contact .contact-flex .contact-list .list-item {
+    width: 100%;
+  }
+}

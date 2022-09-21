@@ -49,7 +49,10 @@ export default function Footer() {
             <div className="footer-links">
               <div
                 onClick={() => {
-                  window.open("https://www.google.com", "_blank");
+                  window.open(
+                    "https://goo.gl/maps/gTQS4eERKypCn7xCA",
+                    "_blank"
+                  );
                 }}
               >
                 <Location />
@@ -58,17 +61,13 @@ export default function Footer() {
                   نصير خلف مبنى النيابة العامة.
                 </p>
               </div>
-              <div
-                onClick={() => {
-                  window.open("https://www.google.com", "_blank");
-                }}
-              >
+              <div>
                 <Phone />
                 <p>0114647455 - 0557407051 - 0503155734</p>
               </div>
               <div
                 onClick={() => {
-                  window.open("https://www.google.com", "_blank");
+                  window.open("mailto:info@ghayat.org", "_blank");
                 }}
               >
                 <Email />
