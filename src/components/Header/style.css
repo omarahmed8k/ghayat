@@ -61,7 +61,7 @@
 
 @media (max-width: 992px) {
   .header .header-flex .header-links {
-    background: linear-gradient(#001235, #021f5aba);
+    background: linear-gradient(#28447c, #001235);
     position: absolute;
     top: 90px;
     right: -100%;
@@ -84,5 +84,8 @@
   }
   .header .header-flex .menu-btn svg * {
     fill: #000;
+  }
+  .header.dark .header-flex .menu-btn svg * {
+    fill: #fff;
   }
 }

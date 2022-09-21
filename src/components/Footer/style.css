@@ -1,0 +1,124 @@
+.footer {
+  background: linear-gradient(#001235, #021f5aba);
+  padding-top: 50px;
+  padding-bottom: 30px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: "";
+  background: url("../../assets/images/logo-bg-transparent.svg") no-repeat
+    center center;
+  background-size: contain;
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  opacity: 0.05;
+  animation: scale 5s linear infinite;
+}
+
+@keyframes scale {
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) scale(1.2);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
+}
+
+.footer .footer-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.footer .footer-flex .footer-company,
+.footer .footer-flex .footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer .footer-flex .footer-company {
+  width: 40%;
+}
+
+.footer .footer-flex .footer-links {
+  width: calc(30% - 50px);
+}
+
+.footer .footer-flex .footer-company .footer-logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.footer .footer-flex .footer-company p {
+  color: #fff;
+  text-align: justify;
+  font-size: 15px;
+}
+
+.footer .footer-flex .footer-company .footer-logo h3 {
+  font-family: var(--font-bold);
+  color: #fff;
+}
+
+.footer .footer-flex .footer-company .footer-logo h3 span {
+  font-family: var(--font-bold);
+  color: var(--second-color);
+}
+
+.footer .footer-flex .footer-links a,
+.footer .footer-flex .footer-links div {
+  color: #fff;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.footer .footer-flex .footer-links div svg {
+  width: 15px;
+  height: 15px;
+}
+
+.footer .footer-flex .footer-links div p {
+  width: calc(100% - 25px);
+  color: #fff;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.footer hr {
+  margin-top: 25px;
+}
+
+.footer .footer-copy {
+  font-family: var(--font-bold);
+  color: #fff;
+  text-align: center;
+  position: relative;
+  bottom: -15px;
+}
