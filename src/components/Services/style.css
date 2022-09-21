@@ -1,0 +1,252 @@
+.services {
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background: linear-gradient(#001235, #021f5aba);
+  overflow: hidden;
+}
+
+.services svg {
+  z-index: 1;
+}
+
+.services::after {
+  content: "";
+  background: url(../../assets/images/logo-transparent-large.svg) no-repeat
+    center;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.services .services-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  height: 100%;
+  width: 100%;
+}
+
+.services .services-flex .services-content {
+  width: 100%;
+}
+
+.services .services-flex .services-content .heading-title .title {
+  color: #fff;
+}
+.services .services-flex .services-content .heading-title .title::before {
+  color: #ffffff20;
+  letter-spacing: 2.5px;
+}
+
+.services .services-flex .services-list {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  z-index: 1;
+}
+
+.services .services-flex .services-list .list-item {
+  width: 50%;
+}
+
+.services .services-flex .services-list .list-item h4 {
+  font-size: 24px;
+  color: var(--second-color);
+  margin-bottom: 20px;
+}
+
+.services .services-flex .services-list .list-item p {
+  font-size: 18px;
+  color: #fff;
+  line-height: 2.5;
+  text-align: justify;
+}
+
+.services .services-flex .services-list .list-item img {
+  width: 100%;
+}
+
+.services .services-flex .services-list .list-item .list-service {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 35px;
+}
+
+.services .services-flex .services-list .list-item .list-service .service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 #00000010;
+  transition: all 0.3s ease-in-out;
+  width: calc(100% / 3);
+}
+
+.services .services-flex .services-list .list-item .list-service .service p {
+  font-size: 22px;
+  font-family: var(--font-bold);
+  color: var(--main-color);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.services
+  .services-flex
+  .services-list
+  .list-item
+  .list-service
+  .service:hover {
+  background: linear-gradient(#001235, #28447c);
+  transform: translateY(-10px);
+}
+
+.services
+  .services-flex
+  .services-list
+  .list-item
+  .list-service
+  .service:hover.service
+  svg
+  * {
+  fill: #fff;
+}
+
+.services
+  .services-flex
+  .services-list
+  .list-item
+  .list-service
+  .service:hover.service
+  p {
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .services .services-flex .services-list {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .services .services-flex .services-list .list-item {
+    width: 100%;
+  }
+
+  .services .services-flex .services-list .list-item .list-service {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .services .services-flex .services-list .list-item .list-service .service {
+    width: 100%;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--main-color);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: var(--main-color);
+  font-size: 16px !important;
+  font-weight: 900;
+}
+
+.swiper-button-next {
+  background: #ffffff50;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  box-shadow: 0 0 10px 0 #00000010;
+  left: 0px !important;
+}
+
+.swiper-button-prev {
+  background: #ffffff50;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  box-shadow: 0 0 10px 0 #00000010;
+  right: 0px !important;
+}
+
+.swiper-pagination {
+  bottom: -10px !important;
+}
+
+.swiper .swiper-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 400px;
+  gap: 15px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 #00000010;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0.95);
+}
+
+.swiper .swiper-item svg {
+  width: 75px;
+  height: 75px;
+}
+
+.swiper .swiper-item h4 {
+  font-size: 22px;
+  color: var(--main-color);
+}
+
+.swiper .swiper-item p {
+  text-align: justify;
+}
+
+.swiper .swiper-item:hover {
+  background: linear-gradient(#001235, #28447c);
+  transform: scale(0.95) translateY(-10px);
+}
+
+.swiper .swiper-item:hover p,
+.swiper .swiper-item:hover h4,
+.swiper .swiper-item:hover svg * {
+  color: #fff;
+  fill: #fff;
+}
+
+.services.light {
+  background: transparent;
+}
+
+.services.light .services-flex .services-content .heading-title .title {
+  color: var(--main-color);
+}
+.services.light .services-flex .services-content .heading-title .title::before {
+  color: #021f5a25;
+  letter-spacing: 2.5px;
+}
+.services.light .services-flex .services-list .list-item p {
+  color: var(--text-color);
+}
