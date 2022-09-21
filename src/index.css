@@ -18,8 +18,8 @@
 }
 
 :root {
-  --main-color: #fff;
-  --second-color: #fff;
+  --main-color: #021f5a;
+  --second-color: #f5aa36;
   --text-color: #212121;
   --font-bold: "Changa-Bold", sans-serif;
   --font-medium: "Changa-Medium", sans-serif;
@@ -29,4 +29,36 @@
 body {
   font-family: var(--font-regular);
   background-color: #ffffff;
+  padding-top: 90px;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+svg {
+  max-width: 100%;
+  height: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-btn {
+  background-color: var(--second-color);
+  color: #ffffff !important;
+  padding: 8px 50px;
+  border-radius: 100px;
+  border: 1px solid var(--second-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.main-btn:hover {
+  background-color: transparent;
+  border-color: var(--second-color);
+  color: var(--second-color) !important;
 }

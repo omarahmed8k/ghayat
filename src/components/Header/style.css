@@ -1,0 +1,39 @@
+.header {
+  height: 90px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 5px #0000001a;
+}
+
+.header .header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.header .header-flex .header-logo {
+  height: 80px;
+  width: 80px;
+}
+
+.header .header-flex .header-links {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.header .header-flex .header-links a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 18px;
+  font-family: var(--font-bold);
+}
+
+.header .header-flex .header-links a.active-link {
+  color: var(--second-color) !important;
+}
