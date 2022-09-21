@@ -1,10 +1,6 @@
+import { ReactComponent as WhatsappIcon } from "../../assets/images/whatsapp.svg";
 import "./style.css";
 
-export default function Services(props) {
-  const { mode } = props;
-  return (
-    <div className="services">
-      <h1>{mode === "light" ? "Services Light" : "Services Dark"}</h1>
-    </div>
-  );
+export default function Whatsapp() {
+  return <WhatsappIcon className="whatsapp" />;
 }
