@@ -42,15 +42,23 @@ svg {
   height: 100%;
 }
 
+button {
+  background: unset;
+  border: unset;
+  outline: unset;
+  cursor: pointer;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0px 20px;
 }
 
 .main-btn {
   background-color: var(--second-color);
   color: #ffffff !important;
-  padding: 8px 50px;
+  padding: 5px 50px;
   border-radius: 100px;
   border: 1px solid var(--second-color);
   cursor: pointer;

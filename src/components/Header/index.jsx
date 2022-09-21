@@ -5,17 +5,12 @@ import { ReactComponent as Menu } from "../../assets/images/menu.svg";
 import "./style.css";
 
 export default function Header() {
-  const [menu, setMenu] = useState(true);
+  const [menu, setMenu] = useState(false);
   return (
     <div className="header">
       <div className="container">
         <div className="header-flex">
-          <div className="header-links">
-            {menu && (
-              <button onClick={setMenu(!menu)}>
-                <Menu />
-              </button>
-            )}
+          <div className={`header-links ${menu ? "open" : ""}`}>
             <Link className="main-btn" to="/contact">
               تواصل معنا
             </Link>
@@ -27,6 +22,14 @@ export default function Header() {
             </NavLink>
             <NavLink to="/">الرئيسية</NavLink>
           </div>
+          <button
+            className="menu-btn"
+            onClick={() => {
+              setMenu(!menu);
+            }}
+          >
+            <Menu />
+          </button>
           <Link className="header-logo" to="/">
             <Logo />
           </Link>
