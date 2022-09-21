@@ -28,7 +28,7 @@ export default function Footer() {
                 والتجارية.
               </p>
             </div>
-            <div className="footer-links">
+            <div className="footer-links thin">
               <Link to="/">
                 <Circle />
                 الرئيسية
