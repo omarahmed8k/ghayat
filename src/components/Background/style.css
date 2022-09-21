@@ -2,8 +2,8 @@
   background: linear-gradient(#001235, #021f5aba);
   height: calc(100vh - 90px);
   width: 100%;
-  position: absolute;
-  top: 90px;
+  position: relative;
+  top: 0px;
   left: 0px;
   display: flex;
   justify-content: center;
@@ -92,6 +92,7 @@
 
 .background .background-flex .background-content h1 span {
   color: var(--second-color);
+  font-family: var(--font-bold);
 }
 
 .background .background-flex .background-content p {
@@ -108,10 +109,53 @@
   width: 75%;
 }
 
+.mouse-cursor {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 50px;
+  border: 2px solid var(--second-color);
+  border-radius: 50px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.mouse-cursor::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: 4px;
+  height: 7px;
+  border-radius: 50px;
+  background: var(--second-color);
+  transform: translateX(-50%);
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+  animation: mouse-cursor 1s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes mouse-cursor {
+  0% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-50%) translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+}
+
 @media (max-width: 992px) {
   .background {
     height: auto;
-    top: 90px;
     padding-top: 40px;
   }
   .background::before {
@@ -131,6 +175,10 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
+  }
+  .background .background-flex .background-content h1,
+  .background .background-flex .background-content p {
+    text-align: center;
   }
   .background .background-flex .background-content a {
     width: 100%;

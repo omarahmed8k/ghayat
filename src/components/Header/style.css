@@ -6,6 +6,7 @@
   right: 0px;
   background-color: #ffffff;
   box-shadow: 0px 1px 5px #0000001a;
+  transition: all 0.3s ease-in-out;
   z-index: 100;
 }
 
@@ -20,6 +21,11 @@
 .header .header-flex .header-logo {
   height: 80px;
   width: 80px;
+}
+
+.header .header-flex .header-logo svg {
+  height: 100%;
+  width: 100%;
 }
 
 .header .header-flex .header-links {
@@ -41,6 +47,16 @@
 
 .header .header-flex .menu-btn {
   display: none;
+}
+
+.header.dark {
+  background: linear-gradient(#001235, #28447c);
+}
+.header.dark .header-flex .header-logo svg * {
+  fill: #fff;
+}
+.header.dark .header-flex .header-links a {
+  color: #fff;
 }
 
 @media (max-width: 992px) {
