@@ -45,13 +45,13 @@
 
 @media (max-width: 992px) {
   .header .header-flex .header-links {
-    background-color: var(--main-color);
+    background: linear-gradient(#001235, #021f5aba);
     position: absolute;
     top: 90px;
     right: -100%;
     height: 100vh;
     width: 100%;
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 80px;
     align-items: center;
     justify-content: center;

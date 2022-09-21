@@ -5,7 +5,11 @@
   position: absolute;
   top: 90px;
   left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 1;
+  overflow: hidden;
 }
 
 .background::before {
@@ -20,4 +24,115 @@
   right: 0px;
   z-index: -1;
   opacity: 0.05;
+  animation: move 3s linear infinite;
+}
+
+.background .background-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  height: 100%;
+  width: 100%;
+}
+
+.background .background-flex .background-img {
+  position: relative;
+  width: 50%;
+}
+
+.background .background-flex .background-img::after {
+  content: "";
+  background: url("../../assets/images/dots.svg") no-repeat center center;
+  background-size: contain;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 20px;
+  left: -35px;
+  z-index: -1;
+  animation: move 3s linear infinite;
+}
+.background .background-flex .background-img::before {
+  content: "";
+  background: url("../../assets/images/dots.svg") no-repeat center center;
+  background-size: contain;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  bottom: -20px;
+  right: -35px;
+  z-index: -1;
+  animation: move 3s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(5px, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.background .background-flex .background-content {
+  width: 50%;
+}
+
+.background .background-flex .background-content h1 {
+  text-align: right;
+  font-family: var(--font-bold);
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.background .background-flex .background-content h1 span {
+  color: var(--second-color);
+}
+
+.background .background-flex .background-content p {
+  font-size: 18px;
+  text-align: justify;
+  line-height: 2.5;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.background .background-flex .background-content a {
+  font-size: 20px;
+  color: #fff;
+  width: 75%;
+}
+
+@media (max-width: 992px) {
+  .background {
+    height: auto;
+    top: 90px;
+    padding-top: 40px;
+  }
+  .background::before {
+    display: none;
+  }
+  .background .background-flex {
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+  }
+  .background .background-flex .background-content,
+  .background .background-flex .background-img {
+    width: 100%;
+  }
+  .background .background-flex .background-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  .background .background-flex .background-content a {
+    width: 100%;
+  }
 }

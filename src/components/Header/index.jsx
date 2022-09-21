@@ -10,17 +10,20 @@ export default function Header() {
     <div className="header">
       <div className="container">
         <div className="header-flex">
+          <Link className="header-logo" to="/">
+            <Logo />
+          </Link>
           <div className={`header-links ${menu ? "open" : ""}`}>
-            <Link className="main-btn" to="/contact">
-              تواصل معنا
-            </Link>
-            <NavLink activeClassName="active-link" to="/services">
-              خدماتنا
-            </NavLink>
+            <NavLink to="/">الرئيسية</NavLink>
             <NavLink activeClassName="active-link" to="/about">
               من نحن
             </NavLink>
-            <NavLink to="/">الرئيسية</NavLink>
+            <NavLink activeClassName="active-link" to="/services">
+              خدماتنا
+            </NavLink>
+            <Link className="main-btn" to="/contact">
+              تواصل معنا
+            </Link>
           </div>
           <button
             className="menu-btn"
@@ -30,9 +33,6 @@ export default function Header() {
           >
             <Menu />
           </button>
-          <Link className="header-logo" to="/">
-            <Logo />
-          </Link>
         </div>
       </div>
     </div>

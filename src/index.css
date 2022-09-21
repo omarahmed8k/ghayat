@@ -26,10 +26,15 @@
   --font-regular: "Changa-Regular", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+  direction: rtl;
+}
+
 body {
   font-family: var(--font-regular);
   background-color: #ffffff;
-  padding-top: 90px;
+  text-align: right;
 }
 
 img {
@@ -49,6 +54,11 @@ button {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -63,6 +73,10 @@ button {
   border: 1px solid var(--second-color);
   cursor: pointer;
   transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-btn:hover {

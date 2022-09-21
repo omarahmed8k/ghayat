@@ -4,7 +4,7 @@ import BackgroundComp from "../../components/Background";
 
 export default function Contact() {
   return (
-    <div className="contact-page">
+    <div className="page">
       <BackgroundComp />
       <ContactComp />
     </div>

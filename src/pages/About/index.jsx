@@ -4,7 +4,7 @@ import BackgroundComp from "../../components/Background";
 
 export default function About() {
   return (
-    <div className="about-page">
+    <div className="page">
       <BackgroundComp />
       <AboutComp />
     </div>

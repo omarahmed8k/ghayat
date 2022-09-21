@@ -4,7 +4,7 @@ import BackgroundComp from "../../components/Background";
 
 export default function Services() {
   return (
-    <div className="services-page">
+    <div className="page">
       <BackgroundComp />
       <ServicesComp mode="light" />
     </div>
