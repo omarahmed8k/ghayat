@@ -28,14 +28,39 @@ export default function Header() {
               <Logo />
             </Link>
             <div className={`header-links ${menu ? "open" : ""}`}>
-              <NavLink to="/">الرئيسية</NavLink>
-              <NavLink activeClassName="active-link" to="/about">
+              <NavLink
+                onClick={() => {
+                  setMenu(false);
+                }}
+                to="/"
+              >
+                الرئيسية
+              </NavLink>
+              <NavLink
+                onClick={() => {
+                  setMenu(false);
+                }}
+                activeClassName="active-link"
+                to="/about"
+              >
                 من نحن
               </NavLink>
-              <NavLink activeClassName="active-link" to="/services">
+              <NavLink
+                onClick={() => {
+                  setMenu(false);
+                }}
+                activeClassName="active-link"
+                to="/services"
+              >
                 خدماتنا
               </NavLink>
-              <Link className="main-btn" to="/contact">
+              <Link
+                onClick={() => {
+                  setMenu(false);
+                }}
+                className="main-btn"
+                to="/contact"
+              >
                 تواصل معنا
               </Link>
             </div>
