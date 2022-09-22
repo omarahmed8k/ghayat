@@ -61,7 +61,11 @@ export default function Footer() {
                   نصير خلف مبنى النيابة العامة.
                 </p>
               </div>
-              <div>
+              <div
+                onClick={() => {
+                  window.open("https://wa.me/+966557407051", "_blank");
+                }}
+              >
                 <Phone />
                 <p>0114647455 - 0557407051 - 0503155734</p>
               </div>
