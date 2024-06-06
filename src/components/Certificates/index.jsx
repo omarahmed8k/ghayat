@@ -16,8 +16,8 @@ export default function Certificates() {
     <div className="container" style={{ marginBottom: "50px" }}>
       <Swiper
         dir="ltr"
-        slidesPerView={3}
-        spaceBetween={15}
+        slidesPerView={1}
+        spaceBetween={10}
         navigation
         loop={true}
         centeredSlides={true}
@@ -27,6 +27,20 @@ export default function Certificates() {
         }}
         pagination={{
           clickable: true,
+        }}
+        breakpoints={{
+          576: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          767: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
         }}
         modules={[Navigation, Pagination, Autoplay, FreeMode]}
         className="swiper-container"

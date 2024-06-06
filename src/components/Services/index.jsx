@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Pagination, Navigation } from "swiper";
+import { Pagination, Navigation, Autoplay, FreeMode } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { ReactComponent as Line } from "../../assets/images/heading-line.svg";
 import { ReactComponent as Circle } from "../../assets/images/circle.svg";
@@ -87,13 +87,17 @@ export default function Services(props) {
             dir="ltr"
             slidesPerView={1}
             spaceBetween={10}
-            autoplay
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: true,
+            }}
             navigation
+            centeredSlides={true}
             loop={true}
             pagination={{
               clickable: true,
             }}
-            modules={[Navigation, Pagination]}
+            modules={[Navigation, Pagination, Autoplay, FreeMode]}
             breakpoints={{
               576: {
                 slidesPerView: 1,
