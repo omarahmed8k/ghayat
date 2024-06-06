@@ -10,6 +10,7 @@ import { ReactComponent as Email } from "../../assets/images/email.svg";
 import emailjs from "emailjs-com";
 import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Fade";
+import sweetAlert from "../../helpers/sweetAlert";
 import "./style.css";
 
 export default function Contact() {
@@ -25,31 +26,20 @@ export default function Contact() {
     e.preventDefault();
 
     if (name === "" || email === "" || phone === "" || message === "") {
-      alert(t("contact.fill"));
+      sweetAlert.error(t("contact.fill"));
     } else {
-      emailjs
-        .sendForm(
-          "service_55r6yug",
-          "template_8l0pxdo",
-          form.current,
-          "64OcsXjOofpHUDuXv"
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-            setSubmitted(true);
-            setName("");
-            setEmail("");
-            setPhone("");
-            setMessage("");
-            setTimeout(() => {
-              setSubmitted(false);
-            }, 5000);
-          },
-          (error) => {
-            console.log(error);
-          }
-        );
+      emailjs.sendForm("service_55r6yug", "template_8l0pxdo", form.current, "64OcsXjOofpHUDuXv").then(
+        (result) => {
+          sweetAlert.success(t("contact.success"));
+          setSubmitted(true);
+          setName("");
+          setEmail("");
+          setPhone("");
+          setMessage("");
+          setTimeout(() => { setSubmitted(false); }, 5000);
+        },
+        (error) => { sweetAlert.error(t("contact.error")); }
+      );
     }
   };
 
