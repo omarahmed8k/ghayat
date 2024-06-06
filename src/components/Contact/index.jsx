@@ -1,7 +1,4 @@
 import React, { useRef, useState } from "react";
-import emailjs from "emailjs-com";
-import Slide from "react-reveal/Slide";
-import Fade from "react-reveal/Fade";
 import { ReactComponent as Line } from "../../assets/images/heading-line.svg";
 import { ReactComponent as Circle } from "../../assets/images/circle.svg";
 import { ReactComponent as Dots } from "../../assets/images/dots.svg";
@@ -9,6 +6,9 @@ import { ReactComponent as Triangle } from "../../assets/images/triangle.svg";
 import { ReactComponent as Location } from "../../assets/images/location.svg";
 import { ReactComponent as Phone } from "../../assets/images/phone.svg";
 import { ReactComponent as Email } from "../../assets/images/email.svg";
+import emailjs from "emailjs-com";
+import Slide from "react-reveal/Slide";
+import Fade from "react-reveal/Fade";
 import "./style.css";
 
 export default function Contact() {
@@ -101,7 +101,7 @@ export default function Contact() {
                     }}
                   >
                     <Phone />
-                    <p>0114647455 - 0557407051 - 0503155734</p>
+                    <p>0557407051 - 0503155734</p>
                   </div>
                   <div
                     className="info-item"

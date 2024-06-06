@@ -1,10 +1,10 @@
-import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../assets/images/logo-light.svg";
 import { ReactComponent as Location } from "../../assets/images/location.svg";
 import { ReactComponent as Phone } from "../../assets/images/phone.svg";
 import { ReactComponent as Email } from "../../assets/images/email.svg";
 import { ReactComponent as Circle } from "../../assets/images/footer-circle.svg";
+import Fade from "react-reveal/Fade";
 import "./style.css";
 
 export default function Footer() {
@@ -19,13 +19,11 @@ export default function Footer() {
                   <Logo />
                 </Link>
                 <h3>
-                  <span>مؤسسة غايات</span> لأدارة الأملاك العقارية
+                  <span>مؤسسة غايات</span> العقارية
                 </h3>
               </div>
               <p>
-                غايات لإدارة الأملاك هي مؤسسة متخصصة في إدارة الأملاك العقارية
-                التجارية والسكنية، تقدم خدمات في إدارة الأملاك السكنيه
-                والتجارية.
+                مؤسسة مرخصة في الرياض من الهيئة العامة للعقار، 20 عامًا من الخبرة في إدارة العقارات.
               </p>
             </div>
             <div className="footer-links thin">
@@ -67,7 +65,7 @@ export default function Footer() {
                 }}
               >
                 <Phone />
-                <p>0114647455 - 0557407051 - 0503155734</p>
+                <p>0557407051 - 0503155734</p>
               </div>
               <div
                 onClick={() => {
@@ -81,7 +79,7 @@ export default function Footer() {
           </div>
           <hr />
           <p className="footer-copy">
-            جميع الحقوق محفوظة لمؤسسة غايات لإدارة الاملاك - سجل تجاري رقم :
+            جميع الحقوق محفوظة لمؤسسة غايات العقارية - سجل تجاري رقم :
             1010744931
           </p>
         </div>

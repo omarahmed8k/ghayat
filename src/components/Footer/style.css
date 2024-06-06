@@ -75,7 +75,7 @@
 
 .footer .footer-flex .footer-company p {
   color: #fff;
-  text-align: justify;
+  text-align: start;
   font-size: 15px;
 }
 
@@ -109,7 +109,7 @@
   width: calc(100% - 25px);
   color: #fff;
   font-size: 15px;
-  text-align: justify;
+  text-align: start;
 }
 
 .footer hr {

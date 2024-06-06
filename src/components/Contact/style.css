@@ -159,7 +159,7 @@
 .contact .contact-flex .contact-list .contact-info .info-item p {
   width: calc(100% - 40px);
   font-size: 16px;
-  text-align: justify;
+  text-align: start;
   color: var(--main-color);
 }
 

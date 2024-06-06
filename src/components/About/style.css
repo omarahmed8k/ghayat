@@ -54,7 +54,7 @@
 }
 
 .about-content p {
-  text-align: justify;
+  text-align: center;
   color: var(--text-color);
   margin-bottom: 50px;
   line-height: 2.5;
@@ -63,7 +63,7 @@
 .about-list {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 50px;
 }
@@ -81,7 +81,7 @@
 
 .about-list .list-item p {
   color: var(--text-color);
-  text-align: justify;
+  text-align: start;
   line-height: 2;
 }
 

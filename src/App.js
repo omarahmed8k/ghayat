@@ -1,7 +1,5 @@
-import { useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 // import CustomCursor from "custom-cursor-react";
-import "custom-cursor-react/dist/index.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
@@ -9,12 +7,9 @@ import Contact from "./pages/Contact";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Whatsapp from "./components/Whatsapp";
+import "custom-cursor-react/dist/index.css";
 
 function App() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <Router>
       {/* <CustomCursor
