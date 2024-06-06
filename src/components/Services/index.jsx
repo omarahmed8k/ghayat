@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { ReactComponent as Line } from "../../assets/images/heading-line.svg";
@@ -23,7 +24,9 @@ import "swiper/css/free-mode";
 import "./style.css";
 
 export default function Services(props) {
+  const { t } = useTranslation();
   const { mode } = props;
+
   return (
     <div className={`services ${mode === "light" ? "light" : ""}`}>
       <Circle className="circle" />
@@ -35,8 +38,8 @@ export default function Services(props) {
           <Fade bottom>
             <div className="services-content">
               <div className="heading-title">
-                <h2 className="title" data-title="ماذا نقدم">
-                  خدماتنا
+                <h2 className="title" data-title={t("services.title2")}>
+                  {t("services.title1")}
                 </h2>
                 <Line />
               </div>
@@ -50,22 +53,30 @@ export default function Services(props) {
             </div>
             <div className="list-item">
               <Slide left>
-                <h4>تقدم مؤسسة غايات العقارية خدمات متعددة</h4>
+                <h4>
+                  {t("services.desc1")}
+                </h4>
                 <p>
-                  تشمل خدمات غايات العقارية الوساطة والتسويق، البحث عن العقارات، وإدارة الأملاك التجارية والسكنية بنسبة تنافسية، بالإضافة إلى الصيانة الدورية. كما تقدم دراسات استشارية لتقييم العقار والعائد المتوقع، وخدمة المزادات لبيع العقار بأفضل سعر في أسرع وقت.
+                  {t("services.desc2")}
                 </p>
                 <div className="list-service">
                   <div className="service">
                     <Service01 />
-                    <p>الوساطه و التسويق</p>
+                    <p>
+                      {t("services.service1")}
+                    </p>
                   </div>
                   <div className="service">
                     <Service02 />
-                    <p>إدارة الأملاك</p>
+                    <p>
+                      {t("services.service2")}
+                    </p>
                   </div>
                   <div className="service">
                     <Service03 />
-                    <p>المزادات العقارية</p>
+                    <p>
+                      {t("services.service3")}
+                    </p>
                   </div>
                 </div>
               </Slide>
@@ -73,6 +84,7 @@ export default function Services(props) {
           </div>
 
           <Swiper
+            dir="ltr"
             slidesPerView={1}
             spaceBetween={10}
             autoplay
@@ -101,45 +113,55 @@ export default function Services(props) {
             <SwiperSlide>
               <div className="swiper-item">
                 <SubService01 />
-                <h4>إدارة محاسبية وقانونية</h4>
+                <h4>
+                  {t("services.card1title")}
+                </h4>
                 <p>
-                  يتم توثيق كل المعاملات المالية حسب نظام (إيجار) وبطرق محاسبية وفقا للمعايير المحاسبيه المعتمدة في المملكة العربية السعودية لضمان حقوق كل الأطراف، كما تتولى مؤسسة غايات متابعة أي إشكاليات نظامية عبر السنوي التعاقد مع مكاتب قانونية مختصة بأشكاليات العقار، وتزيد المالك تقارير سنوية عن نسب التشغيل والعائد.
+                  {t("services.card1desc")}
                 </p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="swiper-item">
                 <SubService02 />
-                <h4>توثيق عقود الإيجار بصورة رسمية</h4>
+                <h4>
+                  {t("services.card2title")}
+                </h4>
                 <p>
-                  لا ضمان راحة مالك العقار تحرص مؤسسة غايات على تسجيل كافة العقود بصفة رسمية في منصة إيجار لضمان حقوق جميع الأطراف، حيث إن نظام (إيجار) يوثق العقود وتفعيلها كسندات تنفيذية بحيث تقلص النزاعات القانونية. مع البحث عن أفضل المستأجرين المحتملين بناءً على رغبة المالك، وتتولى مؤسسة غايات المسؤولية من التحقق من هويات المستأجرين وإدخال البيانات كاملة وصحيحة لنظام إيجار.
+                  {t("services.card2desc")}
                 </p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="swiper-item">
                 <SubService03 />
-                <h4>تسويق وتأجير العقارات</h4>
+                <h4>
+                  {t("services.card3title")}
+                </h4>
                 <p>
-                  من أجل ضمان الحصول على أفضل عائد استثماري تحرص المؤسسة على دراسة العقار وتقييم عوائده بناءً على العقارات المماثلة القريبة للحصول على أفضل إيجار تنافسي وسرعة تشغيل العقار، كما قد نقدم بعض الاقتراحات التي ستساهم في زيادة دخل العقار مما تساهم في زيادة العائد الإيجاري للوحدة العقارية
+                  {t("services.card3desc")}
                 </p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="swiper-item">
                 <SubService04 />
-                <h4>متابعة المستأجرين وتحصيل الأجارات</h4>
+                <h4>
+                  {t("services.card4title")}
+                </h4>
                 <p>
-                  تتولى مؤسسة غايات تحصيل الإيجارات من المستأجرين حسب الأتفاق مع المالك والمستاجر، ويتم قيد جميع المعاملات الماية بنظام محاسبي لضمان الحقوق، وفي حالة التخلف عن السداد تتولى المؤسسة متابعة جميع إشكاليات القضية لحين الانتهاء من السداد.
+                  {t("services.card4desc")}
                 </p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="swiper-item">
                 <SubService05 />
-                <h4>صيانة العقارات</h4>
+                <h4>
+                  {t("services.card5title")}
+                </h4>
                 <p>
-                  تتولى مؤسسة غايات فحص العقار قبل أوبعد الايجار لضمان سلامته، وفي حال وجود أي عيوب يبلغ يتولى قسم الصيانة إصلاحه، كما تتولى المؤسسة المتابعة مع المستأجر في حال حصو أي خلل، كما يمكننا الفحص على جودة العقار في حال الرغبة في تقييمه.
+                  {t("services.card5desc")}
                 </p>
               </div>
             </SwiperSlide>

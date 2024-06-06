@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../assets/images/logo-light.svg";
 import { ReactComponent as Location } from "../../assets/images/location.svg";
@@ -8,6 +9,8 @@ import Fade from "react-reveal/Fade";
 import "./style.css";
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <Fade bottom>
       <div className="footer">
@@ -18,30 +21,28 @@ export default function Footer() {
                 <Link to="/">
                   <Logo />
                 </Link>
-                <h3>
-                  <span>مؤسسة غايات</span> العقارية
-                </h3>
+                <h3><span>{t("ghayat")}</span> {t("realEstate")}</h3>
               </div>
               <p>
-                مؤسسة مرخصة في الرياض من الهيئة العامة للعقار، 20 عامًا من الخبرة في إدارة العقارات.
+                {t("footer.desc")}
               </p>
             </div>
             <div className="footer-links thin">
               <Link to="/">
                 <Circle />
-                الرئيسية
+                {t("header.home")}
               </Link>
               <Link to="/about">
                 <Circle />
-                من نحن
+                {t("header.about")}
               </Link>
               <Link to="/services">
                 <Circle />
-                خدماتنا
+                {t("header.services")}
               </Link>
               <Link to="/contact">
                 <Circle />
-                تواصل معنا
+                {t("header.contact")}
               </Link>
             </div>
             <div className="footer-links">
@@ -55,8 +56,7 @@ export default function Footer() {
               >
                 <Location />
                 <p>
-                  المملكة العربية السعودية – الرياض حي العليا – شارع موسى بن
-                  نصير خلف مبنى النيابة العامة.
+                  {t("footer.address")}
                 </p>
               </div>
               <div
@@ -65,7 +65,9 @@ export default function Footer() {
                 }}
               >
                 <Phone />
-                <p>0557407051 - 0503155734</p>
+                <p>
+                  {t("footer.phone")}
+                </p>
               </div>
               <div
                 onClick={() => {
@@ -73,14 +75,15 @@ export default function Footer() {
                 }}
               >
                 <Email />
-                <p>info@ghayat.org</p>
+                <p>
+                  {t("footer.email")}
+                </p>
               </div>
             </div>
           </div>
           <hr />
           <p className="footer-copy">
-            جميع الحقوق محفوظة لمؤسسة غايات العقارية - سجل تجاري رقم :
-            1010744931
+            {t("footer.rights")}
           </p>
         </div>
       </div>

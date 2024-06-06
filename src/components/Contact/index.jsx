@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { ReactComponent as Line } from "../../assets/images/heading-line.svg";
 import { ReactComponent as Circle } from "../../assets/images/circle.svg";
 import { ReactComponent as Dots } from "../../assets/images/dots.svg";
@@ -12,6 +13,7 @@ import Fade from "react-reveal/Fade";
 import "./style.css";
 
 export default function Contact() {
+  const { t } = useTranslation();
   const form = useRef();
   const [submitted, setSubmitted] = useState(false);
   const [name, setName] = useState("");
@@ -23,7 +25,7 @@ export default function Contact() {
     e.preventDefault();
 
     if (name === "" || email === "" || phone === "" || message === "") {
-      alert("من فضلك املأ جميع الحقول");
+      alert(t("contact.fill"));
     } else {
       emailjs
         .sendForm(
@@ -62,8 +64,8 @@ export default function Contact() {
           <Fade bottom>
             <div className="contact-content">
               <div className="heading-title">
-                <h2 className="title" data-title="تواصل معنا">
-                  اتصل بنا
+                <h2 className="title" data-title={t("contact.title2")}>
+                  {t("contact.title1")}
                 </h2>
                 <Line />
               </div>
@@ -77,6 +79,7 @@ export default function Contact() {
                   allowFullScreen={false}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
+                  title="map"
                 ></iframe>
                 <div className="contact-info">
                   <div
@@ -90,8 +93,7 @@ export default function Contact() {
                   >
                     <Location />
                     <p>
-                      المملكة العربية السعودية – الرياض حي العليا – شارع موسى بن
-                      نصير خلف مبنى النيابة العامة.
+                      {t("footer.address")}
                     </p>
                   </div>
                   <div
@@ -101,7 +103,9 @@ export default function Contact() {
                     }}
                   >
                     <Phone />
-                    <p>0557407051 - 0503155734</p>
+                    <p>
+                      {t("footer.phone")}
+                    </p>
                   </div>
                   <div
                     className="info-item"
@@ -110,7 +114,9 @@ export default function Contact() {
                     }}
                   >
                     <Email />
-                    <p>info@ghayat.org</p>
+                    <p>
+                      {t("footer.email")}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -120,54 +126,62 @@ export default function Contact() {
                 <form ref={form} onSubmit={sendEmail}>
                   {submitted ? (
                     <div className="alert alert-success" role="alert">
-                      تم ارسال الرسالة بنجاح
+                      {t("contact.success")}
                     </div>
                   ) : (
                     <>
                       <div className="form-group">
-                        <label htmlFor="name">الاسم</label>
+                        <label htmlFor="name">
+                          {t("contact.name")}
+                        </label>
                         <input
                           name="name"
                           id="name"
                           type="text"
-                          placeholder="الاسم"
+                          placeholder={t("contact.name")}
                           onChange={(e) => {
                             setName(e.target.value);
                           }}
                         />
                       </div>
                       <div className="form-group">
-                        <label htmlFor="email">البريد الالكتروني</label>
+                        <label htmlFor="email">
+                          {t("contact.email")}
+                        </label>
                         <input
                           name="email"
                           id="email"
                           type="email"
-                          placeholder="البريد الالكتروني"
+                          placeholder={t("contact.email")}
                           onChange={(e) => {
                             setEmail(e.target.value);
                           }}
                         />
                       </div>
                       <div className="form-group">
-                        <label htmlFor="phone">الهاتف</label>
+                        <label htmlFor="phone">
+                          {t("contact.phone")}
+                        </label>
                         <input
                           name="phone"
                           id="phone"
                           type="text"
-                          placeholder="الهاتف"
+                          placeholder={t("contact.phone")}
                           onChange={(e) => {
                             setPhone(e.target.value);
                           }}
                         />
                       </div>
                       <div className="form-group">
-                        <label htmlFor="message">الرسالة</label>
+                        <label htmlFor="message">
+                          {t("contact.message")}
+                        </label>
                         <textarea
                           id="message"
                           name="message"
                           cols="30"
                           rows="10"
-                          placeholder="الرسالة"
+                          placeholder={t("contact.message")}
                           onChange={(e) => {
                             setMessage(e.target.value);
                           }}
@@ -176,7 +190,7 @@ export default function Contact() {
                       <div className="form-group">
                         <input
                           type="submit"
-                          value="ارسال"
+                          value={t("contact.send")}
                           className="main-btn"
                         />
                       </div>

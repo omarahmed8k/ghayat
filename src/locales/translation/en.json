@@ -1,0 +1,70 @@
+{
+  "lang": "en",
+  "ghayat": "Ghayat",
+  "realEstate": "Real Estate",
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact Us"
+  },
+  "hero": {
+    "title1": "Ghayat",
+    "title2": "Real Estate",
+    "desc": "Ghayat Real Estate, a licensed institution in Riyadh by the Real Estate General Authority, offers brokerage, marketing, property management, and auctions. Its services include leasing and marketing properties, rent collection, facility maintenance, property marketing for sale, and organizing physical and electronic auctions, along with tailored marketing campaigns.",
+    "btn": "Contact Us"
+  },
+  "about": {
+    "title1": "About Us",
+    "title2": "About Ghayat",
+    "desc": "Ghayat Real Estate has over 20 years of experience in the real estate sector, with an integrated team of consultants, technicians, accountants, and marketers. The team specializes in property evaluation, market comparison, forecasting expected income, and identifying necessary improvements. Additionally, the institution provides maintenance services to reduce costs and specialized programs for property unit management tailored to client needs.",
+    "card1title": "Experience and Knowledge",
+    "card2title": "Why Choose Us",
+    "card3title": "Institutional Market Relationships",
+    "card4title": "Institution's Objectives",
+    "card1desc": "Ghayat Real Estate boasts over 20 years of experience in property management, with a specialized team studying properties, comparing them to the market, forecasting expected income, identifying income enhancement opportunities, and necessary improvements. It also provides comprehensive maintenance services and unit leasing management tailored to the client.",
+    "card2desc": "Entrusting your property management to Ghayat Real Estate offers numerous benefits, including achieving the highest property return, finding the right property according to your needs, optimizing property operations for the best return, tenant follow-up to relieve owner burdens, and reducing maintenance costs through Ghayat's specialized workforce.",
+    "card3desc": "Ghayat Real Estate has established strong market relationships for both lessors and lessees to ensure optimal property operation with desired tenant quality, aiming to build sustainable relationships.",
+    "card4desc": "Ghayat Real Estate aims for the highest returns for property owners and the best products for tenants."
+  },
+  "services": {
+    "title1": "Our Services",
+    "title2": "What We Offer",
+    "desc1": "Ghayat Real Estate offers a variety of services.",
+    "desc2": "Ghayat Real Estate's services include brokerage and marketing, property search, management of commercial and residential properties at competitive rates, as well as periodic maintenance. It also provides consultancy studies to evaluate property quality and expected returns, along with auction services to sell properties at the best price in the shortest time.",
+    "service1": "Brokerage and Marketing",
+    "service2": "Property Management",
+    "service3": "Real Estate Auctions",
+    "card1title": "Accounting and Legal Management",
+    "card2title": "Formal Lease Contract Documentation",
+    "card3title": "Property Marketing and Leasing",
+    "card4title": "Tenant Follow-up and Rent Collection",
+    "card5title": "Property Maintenance",
+    "card1desc": "All financial transactions are documented according to the (Lease) system and accounting methods in accordance with the approved accounting standards in the Kingdom of Saudi Arabia to ensure the rights of all parties. Ghayat Real Estate also oversees any regulatory issues through annual contracting with legal offices specializing in real estate issues, providing owners with annual reports on operational percentages and returns.",
+    "card2desc": "To ensure the landlord's peace of mind, Ghayat Real Estate ensures that all contracts are officially registered on the Rent platform to protect the rights of all parties. The Lease system documents contracts and activates them as executive bonds, thus reducing legal disputes. Ghayat Real Estate also searches for the best potential tenants based on the landlord's preferences, verifies tenants' identities, and enters complete and accurate data into the Rent system.",
+    "card3desc": "To ensure the best investment return, the institution studies and evaluates the property and its returns based on similar nearby properties to obtain competitive rents and expedite property operation. It may also provide suggestions to increase property income, thereby increasing the rental return of the property unit.",
+    "card4desc": "Ghayat Real Estate manages rent collection from tenants according to agreements with the landlord and tenant. All transactions are recorded in an accounting system to protect rights. In case of default, the institution follows up on all legal issues until the payment is completed.",
+    "card5desc": "Ghayat Real Estate conducts pre- and post-lease property inspections to ensure its safety. In case of any defects, the maintenance department handles repairs. The institution also follows up with tenants in case of any issues. Additionally, quality checks on the property can be performed upon request for evaluation purposes."
+  },
+  "contact": {
+    "title1": "Contact Us",
+    "title2": "Get in Touch",
+    "name": "Name",
+    "phone": "Phone",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "fill": "Please fill in all fields",
+    "sendTitle": "Thank you for contacting us",
+    "sendText": "We will get back to you as soon as possible",
+    "success": "Message sent successfully",
+    "error": "An error occurred, please try again"
+  },
+  "footer": {
+    "address": "Saudi Arabia - Riyadh Al Olaya District, Musa bin Naseer Street, behind the Public Prosecution Building.",
+    "phone": "+966 557407051 - +966 503155734",
+    "email": "info@ghayat.org",
+    "desc": "A licensed institution in Riyadh by the Real Estate General Authority, with 20 years of experience in property management.",
+    "rights": "All rights reserved for Ghayat Real Estate - Commercial Registration Number: 1010744931"
+  }
+}

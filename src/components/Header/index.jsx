@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { ReactComponent as Logo } from "../../assets/images/logo.svg";
@@ -6,6 +7,7 @@ import Fade from "react-reveal/Fade";
 import "./style.css";
 
 export default function Header() {
+  const { t } = useTranslation();
   const [menu, setMenu] = useState(false);
   const [isDark, setIsDark] = useState(false);
 
@@ -34,7 +36,7 @@ export default function Header() {
                 }}
                 to="/"
               >
-                الرئيسية
+                {t("header.home")}
               </NavLink>
               <NavLink
                 onClick={() => {
@@ -43,7 +45,7 @@ export default function Header() {
                 activeClassName="active-link"
                 to="/about"
               >
-                من نحن
+                {t("header.about")}
               </NavLink>
               <NavLink
                 onClick={() => {
@@ -52,7 +54,7 @@ export default function Header() {
                 activeClassName="active-link"
                 to="/services"
               >
-                خدماتنا
+                {t("header.services")}
               </NavLink>
               <Link
                 onClick={() => {
@@ -61,7 +63,7 @@ export default function Header() {
                 className="main-btn"
                 to="/contact"
               >
-                تواصل معنا
+                {t("header.contact")}
               </Link>
             </div>
             <button

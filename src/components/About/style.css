@@ -5,6 +5,7 @@
   animation: move 2s linear infinite;
   z-index: -1;
 }
+
 .dots-left {
   position: absolute;
   top: 30%;
@@ -70,6 +71,7 @@
 
 .about-list .list-item {
   width: calc(50% - 25px);
+  text-align: start;
 }
 
 .about-list .list-item h3 {
@@ -81,7 +83,6 @@
 
 .about-list .list-item p {
   color: var(--text-color);
-  text-align: start;
   line-height: 2;
 }
 

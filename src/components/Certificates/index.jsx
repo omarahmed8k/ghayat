@@ -15,6 +15,7 @@ export default function Certificates() {
   return (
     <div className="container" style={{ marginBottom: "50px" }}>
       <Swiper
+        dir="ltr"
         slidesPerView={3}
         spaceBetween={15}
         navigation

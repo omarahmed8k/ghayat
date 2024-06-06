@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { ReactComponent as Line } from "../../assets/images/heading-line.svg";
 import { ReactComponent as IconAbout01 } from "../../assets/images/about/about-01.svg";
 import { ReactComponent as IconAbout02 } from "../../assets/images/about/about-02.svg";
@@ -12,6 +13,8 @@ import Slide from "react-reveal/Slide";
 import "./style.css";
 
 export default function About() {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="about">
@@ -24,13 +27,13 @@ export default function About() {
             <Fade bottom>
               <div className="about-content">
                 <div className="heading-title">
-                  <h2 className="title" data-title="عن مؤسسة غايات">
-                    من نحن
+                  <h2 className="title" data-title={t("about.title2")}>
+                    {t("about.title1")}
                   </h2>
                   <Line />
                 </div>
                 <p>
-                  تتمتع المؤسسة بخبرة تزيد عن 20 عامًا في مجال العقارات، وتضم فريقًا متكاملًا من المستشارين والفنيين والمحاسبين والمسوقين. يختص الفريق بدراسة العقار ومقارنته بالسوق وتحديد الدخل المتوقع وتقييم فرص زيادته والتحسينات اللازمة. كما توفر المؤسسة فريق صيانة لتقليل التكاليف وبرامج متخصصة لإدارة الوحدات العقارية وفقًا لاحتياجات العميل.
+                  {t("about.desc")}
                 </p>
               </div>
             </Fade>
@@ -38,38 +41,44 @@ export default function About() {
               <div className="list-item">
                 <Slide right>
                   <IconAbout01 />
-                  <h3>الخبرة و المعرفة</h3>
+                  <h3>
+                    {t("about.card1title")}
+                  </h3>
                   <p>
-                    تتمتع المؤسسة بأكثر من 20 عامًا من الخبرة في إدارة العقارات، ويضم فريقًا متخصصًا لدراسة العقار ومقارنته بالسوق وتحديد الدخل المتوقع وفرص زيادته والتحسينات المطلوبة. كما توفر خدمات صيانة متكاملة وإدارة تأجير الوحدات بفترات تناسب العميل.
+                    {t("about.card1desc")}
                   </p>
                 </Slide>
               </div>
               <div className="list-item">
                 <Slide left>
                   <IconAbout02 />
-                  <h3>لماذا تختارنا</h3>
+                  <h3>
+                    {t("about.card2title")}
+                  </h3>
                   <p>
-                    تسليم إدارة عقارك لمؤسسة غايات العقارية يقدم فوائد عديدة، مثل تحقيق أعلى عائد للعقار، البحث عن العقار المناسب لاحتياجاتك، تحسين تشغيل العقار لتحقيق عائد أمثل، متابعة المستأجرين وتخفيف الأعباء عن المالك، وتقليل تكاليف الصيانة باستخدام عمالة غايات المتخصصة.
+                    {t("about.card2desc")}
                   </p>
                 </Slide>
               </div>
               <div className="list-item">
                 <Slide right>
                   <IconAbout03 />
-                  <h3>علاقات المؤسسة فى السوق</h3>
+                  <h3>
+                    {t("about.card3title")}
+                  </h3>
                   <p>
-                    تتمتع مؤسسة غايات العقارية بعلاقات جيدة في السوق العقاري
-                    لكلا الطرفين (مؤجرين و مستأجرين) لتحقيق التشغيل الأمثل لعقارك
-                    مع النوعية المرغوبة من المستأجرين، لمحاولة بناء علاقة مستدامة.
+                    {t("about.card3desc")}
                   </p>
                 </Slide>
               </div>
               <div className="list-item">
                 <Slide left>
                   <IconAbout04 />
-                  <h3>الهدف من قيام المؤسسة</h3>
+                  <h3>
+                    {t("about.card4title")}
+                  </h3>
                   <p>
-                    تهدف مؤسسة غايات العقارية لأعلى عائد لملاك العقارات وحصول المستأجرين أفضل منتج.
+                    {t("about.card4desc")}
                   </p>
                 </Slide>
               </div>
