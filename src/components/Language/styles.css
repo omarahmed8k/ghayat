@@ -1,32 +1,26 @@
 .language {
-  position: fixed;
-  top: 25%;
-  right: 0;
-  width: 35px;
-  height: 40px;
-  background: #e5eeff;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border-radius: 50% 0px 0px 50%;
-  color: var(--main-color);
-  border: 1px solid #b3cdfd;
-  font-family: var(--font-bold);
-  line-height: 0;
   z-index: 99999;
 }
 
-[data-theme="dark"] .language {
-  color: var(--second-color);
+.language svg {
+  width: 30px;
+  height: 30px;
 }
 
-.language:hover {
-  background: #b3cdfd;
+.language svg * {
+  fill: var(--main-color);
 }
 
-[dir="rtl"] .language {
-  right: unset;
-  left: 0;
-  border-radius: 0px 50% 50% 0px;
+.header.dark .language svg * {
+  fill: #fff;
+}
+
+@media (max-width: 992px) {
+  .language svg * {
+    fill: #fff !important;
+  }
 }

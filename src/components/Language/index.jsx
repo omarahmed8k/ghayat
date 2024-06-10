@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { switchLang } from "../../locales/lang";
 import language from "../../locales/i18n";
+import { ReactComponent as Lang } from "../../assets/images/lang.svg";
 import "./styles.css";
 
 export default function Language() {
@@ -18,14 +19,14 @@ export default function Language() {
           className="nav-link language"
           onClick={() => changeLanguage("ar")}
         >
-          Ar
+          <Lang />
         </button>
       ) : (
         <button
           className="nav-link language"
           onClick={() => changeLanguage("en")}
         >
-          En
+          <Lang />
         </button>
       )}
     </>

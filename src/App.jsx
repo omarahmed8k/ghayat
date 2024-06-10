@@ -10,11 +10,9 @@ import Footer from "./components/Footer";
 import Whatsapp from "./components/Whatsapp";
 import i18n from "./locales/i18n";
 import "custom-cursor-react/dist/index.css";
-import Language from "./components/Language";
-// import CustomCursor from "custom-cursor-react";
 
 function App() {
-  const lang = i18n.language || localStorage.getItem("i18nextLng");
+  const lang = localStorage.getItem("i18nextLng") || i18n.language|| "ar";
 
   useEffect(() => {
     checkFixLang(lang);
@@ -25,19 +23,6 @@ function App() {
 
   return (
     <Router>
-      {/* <CustomCursor
-        targets={["a", ".your-css-selector"]}
-        customClass="custom-cursor"
-        dimensions={35}
-        fill="#021f5a"
-        smoothness={{
-          movement: 1,
-          scale: 1,
-          opacity: 1,
-        }}
-        targetOpacity={0.3}
-      /> */}
-      <Language />
       <Header />
       <Whatsapp />
       <Route exact path="/">

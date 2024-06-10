@@ -5,6 +5,7 @@ import En from "./translation/en.json";
 import Ar from "./translation/ar.json";
 
 i18n.use(LanguageDetector).use(initReactI18next).init({
+  lng: "ar",
   fallbackLng: "ar",
   resources: { en: { translations: En }, ar: { translations: Ar } },
   debug: false,

@@ -5,6 +5,7 @@ import { ReactComponent as Logo } from "../../assets/images/logo.svg";
 import { ReactComponent as Menu } from "../../assets/images/menu.svg";
 import Fade from "react-reveal/Fade";
 import "./style.css";
+import Language from "../Language";
 
 export default function Header() {
   const { t } = useTranslation();
@@ -65,6 +66,8 @@ export default function Header() {
               >
                 {t("header.contact")}
               </Link>
+              
+              <Language />
             </div>
             <button
               className="menu-btn"
